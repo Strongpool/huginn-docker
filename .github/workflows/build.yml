@@ -6,7 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      IMAGE_TAG: d8202a554287b9c5015cd8555017d29dd5a4cbb0d5253399145624dd0737873e
+      IMAGE_TAG: latest
+      IMAGE_DIGEST: d8202a554287b9c5015cd8555017d29dd5a4cbb0d5253399145624dd0737873e
     steps:
       ##
       ## Setup
@@ -31,6 +32,6 @@ jobs:
         with:
           push: true
           build-args: |
-            IMAGE_TAG=${{ env.IMAGE_TAG }}
+            IMAGE_DIGEST=${{ env.IMAGE_DIGEST }}
           tags: |
             ghcr.io/strongpool/huginn:${{ env.IMAGE_TAG }}
