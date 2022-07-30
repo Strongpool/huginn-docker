@@ -1,2 +1,2 @@
 ARG IMAGE_TAG
-FROM huginn/hugin:${IMAGE_TAG}
+FROM huginn/huginn:${IMAGE_TAG}
