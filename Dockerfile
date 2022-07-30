@@ -1,2 +1,2 @@
-ARG IMAGE_DIGEST
-FROM huginn/huginn@sha256:${IMAGE_DIGEST}
+ARG IMAGE_TAG
+FROM huginn/hugin:${IMAGE_TAG}
